@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "08d4411b-81b5-48c3-b93e-35a692aa5f3f",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33484787"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Chinmaiadhav\",\r\n  \"firstName\": \"Chinmai\",\r\n  \"lastName\": \"Adhav\",\r\n  \"email\": \"chinmaiadhav3@gmail.com\",\r\n  \"password\": \"chinu123\",\r\n  \"phone\": \"7020845584\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{pet_baseurl}}/user",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create With Array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Chinmaiadhav\",\r\n  \"firstName\": \"Chinmai\",\r\n  \"lastName\": \"Adhav\",\r\n  \"email\": \"chinmaiadhav3@gmail.com\",\r\n  \"password\": \"chinu123\",\r\n  \"phone\": \"7020845584\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{pet_baseurl}}/user/createWithArray",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pet_baseurl}}/user/Chinmaiadhav",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user",
+						"Chinmaiadhav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pet_baseurl}}/user/login?username=Chinmaiadhav&password=chinu123",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Chinmaiadhav"
+						},
+						{
+							"key": "password",
+							"value": "chinu123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updated user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"username\": \"Chinmaiadhav\",\r\n    \"firstName\": \"Chinmai\",\r\n    \"lastName\": \"Adhav\",\r\n    \"email\": \"chinmaiadhav3@gmail.com\",\r\n    \"password\": \"chinu123\",\r\n    \"phone\": \"9020845584\",\r\n    \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{pet_baseurl}}/user/Chinmaiadhav",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user",
+						"Chinmaiadhav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pet_baseurl}}/user/logout",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{pet_baseurl}}/user/Chinmaiadhav",
+					"host": [
+						"{{pet_baseurl}}"
+					],
+					"path": [
+						"user",
+						"Chinmaiadhav"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
